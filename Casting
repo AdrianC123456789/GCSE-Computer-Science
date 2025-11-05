@@ -1,0 +1,15 @@
+num_1 = int(input("enter a number"))
+num_2 = int(input("enter a number"))
+print(num_1 + num_2)
+
+num_1 = input("Enter a number")
+num_2 = input("Enter a number")
+num_3 = input("Enter a number")
+print((float(num_1) + float(num_2) + float(num_3)) / 3)
+
+temp = input("give me the temperature in celsius")
+print((float(temp) * 9/5) + 32)
+
+decimal = float(input("Give me a decimal number"))
+print(int(decimal))
+print(round(decimal))
