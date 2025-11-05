@@ -1,0 +1,29 @@
+num = int(input("Give me a number"))
+if num % 2 == 0:
+    print("even")
+else:
+    print("odd")
+
+age = int(input("What is your age"))
+if age >= 18:
+    print("You are an adult")
+else:
+    print("you are a minor")
+
+
+num = int(input("Enter a number"))
+if num > 0:
+    print("positive")
+elif num == 0:
+    print("zero")
+else:
+    print("negative")
+
+num_1 = int(input("pick a number"))
+num_2 = int(input("pick a number"))
+if num_1 > num_2:
+    print("number 1 is bigger")
+elif num_1 == num_2:
+    print("Both numbers are equal")
+else:
+    print("number 2 is bigger")
