@@ -1,0 +1,6 @@
+def calculate_sale_price(original_price, discount_percent):
+    new_price = original_price - discount_percent
+    return new_price
+
+result = calculate_sale_price(100.00, 20)
+print(result)
