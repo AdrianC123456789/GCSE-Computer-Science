@@ -1,0 +1,63 @@
+Task 1: Shopping Price Calculator
+Create a program that stores the name of an item, its price, and whether the customer has a discount card.
+If the customer has a discount card, reduce the price.
+
+Display the item name and the final price.
+
+item_name = input("Enter item name: ")
+price = float(input("Enter item price: "))
+has_discount_card = input("Do you have a discount card? (yes/no): ")
+
+if has_discount_card.lower() == "yes":
+    price = price * 0.9
+
+print("Item Name:", item_name)
+print("Final Price:", price)
+
+Task 2: Exam Score Checker
+Ask the user to enter their exam score.
+Decide whether they have passed or failed based on the score and store this as a boolean value.
+Print the score and the pass/fail result.
+
+score = int(input("Enter your exam score: "))
+
+passed = score >= 50
+
+print("Score:", score)
+print("Passed:", passed)
+
+Task 3: Countdown Program
+Ask the user for a starting number.
+Use a loop to count down to zero, displaying each number.
+When the countdown finishes, display a message.
+
+start = int(input("Enter a starting number: "))
+
+for i in range(start, -1, -1):
+    print(i)
+
+print("Countdown finished!")
+
+Task 4: Times Table Generator
+Ask the user for a number.
+Use a loop to display the first 10 multiples of that number in a clear format.
+
+number = int(input("Enter a number: "))
+for i in range(1, 11):
+    print(number, "x", i, "=", number * i)
+
+Task 5: Simple Login System
+Store a username and password in variables.
+Ask the user to enter a username and password.
+Check if the details are correct and display an appropriate message.
+
+stored_username = "admin"
+stored_password = "1234"
+
+username = input("Enter username: ")
+password = input("Enter password: ")
+
+if username == stored_username and password == stored_password:
+    print("Login successful")
+else:
+    print("Invalid username or password")
