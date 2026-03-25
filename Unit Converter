@@ -1,0 +1,40 @@
+unit = input("Enter a unit(mm, cm, m, km)")
+convert = input("Convert to what")
+value = int(input("Enter value"))
+
+if unit == "mm" and convert == "cm":
+    value /= 10
+    print(value)
+elif unit == "mm" and convert == "m":
+    value /= 1000
+    print(value)
+elif unit == "mm" and convert == "km":
+    value /= 1000000
+    print(value)
+elif unit == "cm" and convert == "mm":
+    value *= 10
+    print(value)
+elif unit == "cm" and convert == "m":
+    value /= 100
+    print(value)
+elif unit == "cm" and convert == "km":
+    value /= 100000
+    print(value)
+elif unit == "m" and convert == "mm":
+    value *= 1000
+    print(value)
+elif unit == "m" and convert == "cm":
+    value *= 100
+    print(value)
+elif unit == "m" and convert == "km":
+    value /= 1000
+    print(value)
+elif unit == "km" and convert == "mm":
+    value *= 1000000
+    print(value)
+elif unit == "km" and convert == "cm":
+    value *= 100000
+    print(value)
+elif unit == "km" and convert == "m":
+    value *= 1000
+    print(value)
