@@ -1,0 +1,13 @@
+fl_width = int(input("Enter floor width"))
+fl_length = int(input("Enter floor length"))
+ti_width = int(input("Enter tile width"))
+ti_length = int(input("Enter tile length"))
+cost = int(input("Enter cost of a tile in £"))
+
+fl_area = fl_width * fl_length
+ti_area = ti_width * ti_length
+
+num_of_tiles = fl_area/ti_area
+total = num_of_tiles * cost
+
+print("The total cost is: £{}".format(total))
