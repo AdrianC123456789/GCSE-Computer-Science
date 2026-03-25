@@ -1,0 +1,6 @@
+year = input("Enter a 4 digit year")
+total = 0
+
+for i in year:
+    total += int(i)
+print(total)
