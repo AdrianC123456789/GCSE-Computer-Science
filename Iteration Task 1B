@@ -7,12 +7,14 @@ if guess == password:
   print("Access granted!")
 
 password = "oak123"
+attempts = 3
 guess = input("Enter the password: ")
-for i in range(2):
-  if guess != password:
+attempts -= 1
+while guess != password and attempts > 0:
     print("Incorrect password. Try again.")
+    attempts -= 1
     guess = input("Enter the password: ")
-if guess == password:
-  print("Access granted!")
-else:
+if guess != password and attempts == 0:
   print("Too many incorrect attempts. Access denied!")
+else:
+  print("Access granted!")
