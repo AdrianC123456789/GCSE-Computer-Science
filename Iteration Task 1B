@@ -1,0 +1,7 @@
+password = "oak123"
+guess = input("Enter the password: ")
+while guess != password:
+  print("Incorrect password. Try again.")
+  guess = input("Enter the password: ")
+if guess == password:
+  print("Access granted!")
