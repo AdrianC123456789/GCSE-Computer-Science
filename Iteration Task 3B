@@ -1,0 +1,9 @@
+import random
+import string
+
+num = int(input("Enter the number of passwords to generate:"))
+for i in range(num):
+  password = ""
+  for e in range(8):
+    password += random.choice(string.ascii_letters + string.digits)
+  print(password)
