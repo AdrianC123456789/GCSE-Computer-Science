@@ -1,0 +1,12 @@
+password = "oak123"
+attempts = 3
+guess = input("Enter the password: ")
+attempts -= 1
+while guess != password and attempts > 0:
+    print("Incorrect password. Try again.")
+    attempts -= 1
+    guess = input("Enter the password: ")
+if guess != password and attempts == 0:
+  print("Too many incorrect attempts. Access denied!")
+else:
+  print("Access granted!")
